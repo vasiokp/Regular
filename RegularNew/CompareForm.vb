@@ -47,9 +47,9 @@ Public Class CompareForm
 
 
             With datacompare.Rows(i)
-                If .Cells("equals").Value = "     !=" Then
+                If .Cells("equals1").Value = "     !=" Then
                     .DefaultCellStyle.BackColor = Color.LightPink
-                ElseIf .Cells("equals").Value = "     =" Then
+                ElseIf .Cells("equals1").Value = "     =" Then
                     .DefaultCellStyle.BackColor = Color.LightGreen
                 Else
                     .DefaultCellStyle.BackColor = Color.LightYellow

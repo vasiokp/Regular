@@ -25,7 +25,7 @@ Partial Class CompareForm
         Me.datacompare = New System.Windows.Forms.DataGridView()
         Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.myword = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.equals = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.equals1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.yourword = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.datacompare, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -34,7 +34,7 @@ Partial Class CompareForm
         '
         Me.datacompare.BackgroundColor = System.Drawing.SystemColors.ButtonFace
         Me.datacompare.ColumnHeadersHeight = 25
-        Me.datacompare.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id, Me.myword, Me.equals, Me.yourword})
+        Me.datacompare.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id, Me.myword, Me.equals1, Me.yourword})
         Me.datacompare.GridColor = System.Drawing.SystemColors.ActiveCaption
         Me.datacompare.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.datacompare.Location = New System.Drawing.Point(12, 12)
@@ -64,14 +64,14 @@ Partial Class CompareForm
         Me.myword.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.myword.Width = 242
         '
-        'equals
+        'equals1
         '
-        Me.equals.HeaderText = "Рівність"
-        Me.equals.Name = "equals"
-        Me.equals.ReadOnly = True
-        Me.equals.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.equals.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.equals.Width = 50
+        Me.equals1.HeaderText = "Рівність"
+        Me.equals1.Name = "equals1"
+        Me.equals1.ReadOnly = True
+        Me.equals1.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.equals1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.equals1.Width = 50
         '
         'yourword
         '
@@ -98,6 +98,6 @@ Partial Class CompareForm
     Friend WithEvents datacompare As DataGridView
     Friend WithEvents id As DataGridViewTextBoxColumn
     Friend WithEvents myword As DataGridViewTextBoxColumn
-    Friend WithEvents equals As DataGridViewTextBoxColumn
+    Friend WithEvents equals1 As DataGridViewTextBoxColumn
     Friend WithEvents yourword As DataGridViewTextBoxColumn
 End Class
