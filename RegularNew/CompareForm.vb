@@ -43,7 +43,7 @@ Public Class CompareForm
             Next
         Next
         For i = 0 To datacompare.Rows.Count - 2
-            'For i = 0 To 5
+            'For i = 0 To 5віф і фі іф
 
 
             With datacompare.Rows(i)
