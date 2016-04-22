@@ -1,0 +1,15 @@
+D:\Курсач\RegularNew\RegularNew\bin\Debug\RegularNew.exe.config
+D:\Курсач\RegularNew\RegularNew\bin\Debug\RegularNew.exe
+D:\Курсач\RegularNew\RegularNew\bin\Debug\RegularNew.pdb
+D:\Курсач\RegularNew\RegularNew\bin\Debug\RegularNew.xml
+D:\Курсач\RegularNew\RegularNew\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Курсач\RegularNew\RegularNew\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+D:\Курсач\RegularNew\RegularNew\obj\Debug\RegularNew.HelpForm.resources
+D:\Курсач\RegularNew\RegularNew\obj\Debug\RegularNew.RegForm.resources
+D:\Курсач\RegularNew\RegularNew\obj\Debug\RegularNew.Resources.resources
+D:\Курсач\RegularNew\RegularNew\obj\Debug\RegularNew.vbproj.GenerateResource.Cache
+D:\Курсач\RegularNew\RegularNew\obj\Debug\RegularNew.exe
+D:\Курсач\RegularNew\RegularNew\obj\Debug\RegularNew.xml
+D:\Курсач\RegularNew\RegularNew\obj\Debug\RegularNew.pdb
+D:\Курсач\RegularNew\RegularNew\obj\Debug\RegularNew.CompareForm.resources
+D:\Курсач\RegularNew\RegularNew\obj\Debug\RegularNew.vbprojResolveAssemblyReference.cache
