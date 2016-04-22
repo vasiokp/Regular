@@ -1076,21 +1076,17 @@ Public Class RegForm
     End Function
 
     Public Function userTextget()
-        Dim t As String = userTextf()
-        Dim arrayWord() As String = t.Split()
+
+        Dim arrayWord() As String = Split(userTextf())
 
         Dim LastNonEmpty As Integer = -1
         For i As Integer = 0 To arrayWord.Length - 1
-            If arrayWord(i) <> "" Then
+            If arrayWord(i) <> "" Then  'Перевірка на пусті комірки 
                 LastNonEmpty += 1
                 arrayWord(LastNonEmpty) = arrayWord(i)
             End If
         Next
         ReDim Preserve arrayWord(LastNonEmpty)
-        For Each elem As String In arrayWord
-            '   txtgettext.Text += elem + " " + vbNewLine
-
-        Next
         Return arrayWord
     End Function
 
