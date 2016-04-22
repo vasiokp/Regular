@@ -929,10 +929,9 @@ Public Class RegForm
     End Sub
 
     Public Sub filecreate()
-        Dim txtfile As New StreamWriter("c: \tekst.txt", False) ' создаем новый объект задаем путь, True это как аппенд в ВБ-6
+        Dim txtfile As New StreamWriter("c: \tekst.txt", False)
 
-        '   txtfile.Write(GetText)
-        txtfile.Write(txtgettext.Text) ' записиваем
+        txtfile.Write(txtgettext.Text)
         txtfile.Close()
     End Sub
     Public Function GetText()
@@ -1011,10 +1010,6 @@ Public Class RegForm
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles btnhelp.Click
         HelpForm.Show()
-
-
-
-
     End Sub
 
     Private Sub txtvar_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtvar.KeyPress
