@@ -836,10 +836,11 @@ Public Class RegForm
                                         Exit For
                                     End If
                                 Next
+
                                 For l = 0 To length - 1
-                                    podmask += CStr(numerik(GetRandom(0, 9)))
-                                    If GetRandom(0, 8) > 3 Then
-                                        ufal(i) = alphabet(GetRandom(0, 25))
+                                    podmask += alphabet3(GetRandom(0, 51))
+                                If GetRandom(0, 8) > 3 Then
+                                        ufal(i) = CStr(numerik(GetRandom(0, 9)))
                                         Exit For
                                     Else ufal(i) = ""
                                     End If
@@ -1005,15 +1006,15 @@ Public Class RegForm
             txtgettext.Text = GetText()
             filecreate()
             txt1.Text = val_number + 1
+            txtfal.Clear()
+            For a = 0 To fal_number - 1
+                txtfal.Text += fal_words(a) + " "
+            Next
         End If
     End Sub
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles btnhelp.Click
         HelpForm.Show()
-
-
-
-
     End Sub
 
     Private Sub txtvar_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtvar.KeyPress
@@ -1091,10 +1092,6 @@ Public Class RegForm
             End If
         Next
         ReDim Preserve arrayWord(LastNonEmpty)
-        For Each elem As String In arrayWord
-            '   txtgettext.Text += elem + " " + vbNewLine
-
-        Next
         Return arrayWord
     End Function
 

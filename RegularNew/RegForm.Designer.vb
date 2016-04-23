@@ -43,6 +43,7 @@ Partial Class RegForm
         Me.lblsikret = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtfal = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'lblgetmask
@@ -224,6 +225,14 @@ Partial Class RegForm
         Me.Label3.TabIndex = 19
         Me.Label3.Text = "К-сть слів"
         '
+        'txtfal
+        '
+        Me.txtfal.Location = New System.Drawing.Point(446, 297)
+        Me.txtfal.Multiline = True
+        Me.txtfal.Name = "txtfal"
+        Me.txtfal.Size = New System.Drawing.Size(261, 113)
+        Me.txtfal.TabIndex = 20
+        '
         'RegForm
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -231,6 +240,7 @@ Partial Class RegForm
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(849, 432)
         Me.ControlBox = False
+        Me.Controls.Add(Me.txtfal)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lblsikret)
@@ -279,4 +289,5 @@ Partial Class RegForm
     Friend WithEvents lblsikret As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents txtfal As TextBox
 End Class

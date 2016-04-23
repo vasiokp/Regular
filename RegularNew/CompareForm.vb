@@ -8,7 +8,7 @@ Public Class CompareForm
         Dim mas() As String = RegForm.arrgood(RegForm.txtgettext.Text.Split)
         Dim k As Integer = 0
         Dim j As Integer = 0
-
+        Dim score As Integer = 0
 
         If userarray.Length < RegForm.val_number + 1 Then
             MsgBox("Недостатньо слів у вашому тексті")
@@ -26,7 +26,7 @@ Public Class CompareForm
                         If (word = userarray(k)) Then
                             datacompare.Rows.Add(j, word, "     =", userarray(k))
 
-                            'datacompare.Rows Then[j].Cells[0].Style.BackColor = System.Drawing.Color.Green;
+                            score += 1
                             k += 1
                                 Exit For
                             Else
@@ -43,8 +43,6 @@ Public Class CompareForm
             Next
         Next
         For i = 0 To datacompare.Rows.Count - 2
-            'For i = 0 To 5віф і фі іф
-
 
             With datacompare.Rows(i)
                 If .Cells("equals1").Value = "     !=" Then
@@ -64,7 +62,11 @@ Public Class CompareForm
         Else
             Width = datacompare.Width + 18
         End If
-
+        If score = RegForm.val_number + 1 Then
+            MsgBox("Усі слова співпали")
+        Else
+            MsgBox("Тількі " + CStr(score) + " із " + CStr(RegForm.val_number + 1) + " слів спiвпадають")
+        End If
     End Sub
 
 

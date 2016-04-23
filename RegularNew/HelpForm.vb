@@ -9,7 +9,7 @@
         datahelp.Rows.Add("5", " (a-zA-Z)(+-*/)")
         datahelp.Rows.Add("6", " (a-zA-Z)")
         datahelp.Rows.Add("7", " (a-zA-Z)")
-        datahelp.Rows.Add("8", " (a-z)")
+        datahelp.Rows.Add("8", " (a-zA-Z)")
         datahelp.Rows.Add("9", " (a-zA-Z0-9.,:;)")
         datahelp.Rows.Add("10", " (0-9)")
         datahelp.Rows.Add("11", " (a-yA-Y) - голосна")
