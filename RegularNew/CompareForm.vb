@@ -64,6 +64,8 @@ Public Class CompareForm
         End If
         If score = RegForm.val_number + 1 Then
             MsgBox("Усі слова співпали")
+        ElseIf score = 0 Then
+            MsgBox("Не має співпадань")
         Else
             MsgBox("Тількі " + CStr(score) + " із " + CStr(RegForm.val_number + 1) + " слів спiвпадають")
         End If

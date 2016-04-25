@@ -45,15 +45,14 @@ Partial Class RegForm
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtfal = New System.Windows.Forms.TextBox()
         Me.FolderBrowserDialog1 = New System.Windows.Forms.FolderBrowserDialog()
-        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.chkfile = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'lblgetmask
         '
         Me.lblgetmask.AutoSize = True
         Me.lblgetmask.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.lblgetmask.Location = New System.Drawing.Point(101, 81)
+        Me.lblgetmask.Location = New System.Drawing.Point(101, 83)
         Me.lblgetmask.Name = "lblgetmask"
         Me.lblgetmask.Size = New System.Drawing.Size(170, 19)
         Me.lblgetmask.TabIndex = 0
@@ -64,7 +63,7 @@ Partial Class RegForm
         Me.txtgetmask.BackColor = System.Drawing.SystemColors.Control
         Me.txtgetmask.Enabled = False
         Me.txtgetmask.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.txtgetmask.Location = New System.Drawing.Point(23, 103)
+        Me.txtgetmask.Location = New System.Drawing.Point(23, 105)
         Me.txtgetmask.Multiline = True
         Me.txtgetmask.Name = "txtgetmask"
         Me.txtgetmask.ReadOnly = True
@@ -77,7 +76,7 @@ Partial Class RegForm
         '
         Me.btnclose.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.btnclose.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.btnclose.Location = New System.Drawing.Point(154, 394)
+        Me.btnclose.Location = New System.Drawing.Point(154, 382)
         Me.btnclose.Name = "btnclose"
         Me.btnclose.Size = New System.Drawing.Size(88, 26)
         Me.btnclose.TabIndex = 5
@@ -98,7 +97,7 @@ Partial Class RegForm
         '
         Me.txtgettext.Enabled = False
         Me.txtgettext.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.txtgettext.Location = New System.Drawing.Point(12, 176)
+        Me.txtgettext.Location = New System.Drawing.Point(12, 178)
         Me.txtgettext.Multiline = True
         Me.txtgettext.Name = "txtgettext"
         Me.txtgettext.ReadOnly = True
@@ -127,7 +126,7 @@ Partial Class RegForm
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label1.Location = New System.Drawing.Point(101, 144)
+        Me.Label1.Location = New System.Drawing.Point(101, 146)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(170, 19)
         Me.Label1.TabIndex = 7
@@ -186,7 +185,7 @@ Partial Class RegForm
         '
         Me.btnfopen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btnfopen.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.btnfopen.Location = New System.Drawing.Point(118, 342)
+        Me.btnfopen.Location = New System.Drawing.Point(118, 344)
         Me.btnfopen.Name = "btnfopen"
         Me.btnfopen.Size = New System.Drawing.Size(166, 23)
         Me.btnfopen.TabIndex = 16
@@ -236,24 +235,25 @@ Partial Class RegForm
         Me.txtfal.Size = New System.Drawing.Size(261, 113)
         Me.txtfal.TabIndex = 20
         '
-        'Button1
+        'chkfile
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Button1.Location = New System.Drawing.Point(32, 46)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(71, 23)
-        Me.Button1.TabIndex = 21
-        Me.Button1.Text = "Довідка"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.chkfile.AutoSize = True
+        Me.chkfile.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.chkfile.Location = New System.Drawing.Point(49, 50)
+        Me.chkfile.Name = "chkfile"
+        Me.chkfile.Size = New System.Drawing.Size(193, 19)
+        Me.chkfile.TabIndex = 22
+        Me.chkfile.Text = "Створити текстовий файл "
+        Me.chkfile.UseVisualStyleBackColor = True
         '
         'RegForm
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.Azure
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ClientSize = New System.Drawing.Size(849, 432)
+        Me.ClientSize = New System.Drawing.Size(849, 420)
         Me.ControlBox = False
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.chkfile)
         Me.Controls.Add(Me.txtfal)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -305,6 +305,5 @@ Partial Class RegForm
     Friend WithEvents Label3 As Label
     Friend WithEvents txtfal As TextBox
     Friend WithEvents FolderBrowserDialog1 As FolderBrowserDialog
-    Friend WithEvents SaveFileDialog1 As SaveFileDialog
-    Friend WithEvents Button1 As Button
+    Friend WithEvents chkfile As CheckBox
 End Class

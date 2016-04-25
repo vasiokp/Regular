@@ -1,0 +1,14 @@
+D:\Курсач\RegularGit\RegularNew\bin\x86\Debug\RegularNew.exe.config
+D:\Курсач\RegularGit\RegularNew\bin\x86\Debug\RegularNew.exe
+D:\Курсач\RegularGit\RegularNew\bin\x86\Debug\RegularNew.pdb
+D:\Курсач\RegularGit\RegularNew\bin\x86\Debug\RegularNew.xml
+D:\Курсач\RegularGit\RegularNew\bin\x86\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Курсач\RegularGit\RegularNew\bin\x86\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+D:\Курсач\RegularGit\RegularNew\obj\x86\Debug\RegularNew.CompareForm.resources
+D:\Курсач\RegularGit\RegularNew\obj\x86\Debug\RegularNew.HelpForm.resources
+D:\Курсач\RegularGit\RegularNew\obj\x86\Debug\RegularNew.RegForm.resources
+D:\Курсач\RegularGit\RegularNew\obj\x86\Debug\RegularNew.Resources.resources
+D:\Курсач\RegularGit\RegularNew\obj\x86\Debug\RegularNew.vbproj.GenerateResource.Cache
+D:\Курсач\RegularGit\RegularNew\obj\x86\Debug\RegularNew.exe
+D:\Курсач\RegularGit\RegularNew\obj\x86\Debug\RegularNew.xml
+D:\Курсач\RegularGit\RegularNew\obj\x86\Debug\RegularNew.pdb

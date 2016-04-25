@@ -1,0 +1,61 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+RegularNew
+</name>
+</assembly>
+<members>
+<member name="M:RegularNew.RegForm.zaminasmask2(System.Int32)">
+ <summary>
+ Заміна для деяких варіантів
+ </summary>
+ <param name="r">Варіант</param>
+</member>
+<member name="F:RegularNew.RegForm.alphabet">
+ <summary>
+ Масив малих букв
+ </summary>
+</member>
+<member name="F:RegularNew.RegForm.alphabet2">
+ <summary>
+ Масив великих букв
+ </summary>
+</member>
+<member name="F:RegularNew.RegForm.alphabet3">
+ <summary>
+ Масив усіх букв
+ </summary>
+</member>
+<member name="M:RegularNew.RegForm.getFirstPosition(System.String)">
+ <summary>
+ Повертає позиции початку  діапазону 
+ </summary>
+ <param name="beginpos">Перший символ</param>
+ <returns></returns>
+</member>
+<member name="M:RegularNew.RegForm.getLastPosition(System.String)">
+ <summary>
+ Повертає позиции кінця діапазону 
+ </summary>
+ <param name="lastpos">Останній </param>
+ <returns></returns>
+</member>
+<member name="T:RegularNew.My.Resources.Resources">
+<summary>
+  Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+</summary>
+</member>
+<member name="P:RegularNew.My.Resources.Resources.ResourceManager">
+<summary>
+  Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+</summary>
+</member>
+<member name="P:RegularNew.My.Resources.Resources.Culture">
+<summary>
+  Перезаписывает свойство CurrentUICulture текущего потока для всех
+  обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+</summary>
+</member>
+</members>
+</doc>
