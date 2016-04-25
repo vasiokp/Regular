@@ -927,10 +927,14 @@ Public Class RegForm
         fal_words(3) = GetReg(ee, False)
 
     End Sub
-
+    Public Sub ChooseFolder()
+        If FolderBrowserDialog1.ShowDialog() = DialogResult.OK Then
+            txt.Text = FolderBrowserDialog1.SelectedPath
+        End If
+    End Sub
     Public Sub filecreate()
-        Dim txtfile As New StreamWriter("c: \tekst.txt", False)
-
+        ChooseFolder()
+        Dim txtfile As New StreamWriter(FolderBrowserDialog1.SelectedPath, False)
         txtfile.Write(txtgettext.Text)
         txtfile.Close()
     End Sub
@@ -1096,6 +1100,40 @@ Public Class RegForm
 
     Private Sub btnfopen_Click(sender As Object, e As EventArgs) Handles btnfopen.Click
         CompareForm.Show()
+    End Sub
+
+    Private Sub Button1_Click_2(sender As Object, e As EventArgs) Handles Button1.Click
+        ' Displays a SaveFileDialog so the user can save the Image
+        ' assigned to Button2.
+        Dim saveFileDialog1 As New SaveFileDialog()
+        saveFileDialog1.Filter = "JPeg Image|*.jpg|Bitmap Image|*.bmp|Gif Image|*.gif"
+        saveFileDialog1.Title = "Save an Image File"
+        saveFileDialog1.ShowDialog()
+
+        ' If the file name is not an empty string open it for saving.
+        If saveFileDialog1.FileName <> "" Then
+            ' Saves the Image via a FileStream created by the OpenFile method.
+            Dim fs As System.IO.FileStream = CType _
+               (saveFileDialog1.OpenFile(), System.IO.FileStream)
+            ' Saves the Image in the appropriate ImageFormat based upon the
+            ' file type selected in the dialog box.
+            ' NOTE that the FilterIndex property is one-based.
+            Select Case saveFileDialog1.FilterIndex
+                Case 1
+                    Me.button2.Image.Save(fs,
+                       System.Drawing.Imaging.ImageFormat.Jpeg)
+
+                Case 2
+                    Me.button2.Image.Save(fs,
+                       System.Drawing.Imaging.ImageFormat.Bmp)
+
+                Case 3
+                    Me.button2.Image.Save(fs,
+                       System.Drawing.Imaging.ImageFormat.Gif)
+            End Select
+
+            fs.Close()
+        End If
     End Sub
 
     Private Sub chkdiagnostic_Click(sender As Object, e As EventArgs) Handles chkdiagnostic.Click

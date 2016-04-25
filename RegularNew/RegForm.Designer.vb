@@ -44,6 +44,9 @@ Partial Class RegForm
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtfal = New System.Windows.Forms.TextBox()
+        Me.FolderBrowserDialog1 = New System.Windows.Forms.FolderBrowserDialog()
+        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblgetmask
@@ -233,6 +236,16 @@ Partial Class RegForm
         Me.txtfal.Size = New System.Drawing.Size(261, 113)
         Me.txtfal.TabIndex = 20
         '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Button1.Location = New System.Drawing.Point(32, 46)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(71, 23)
+        Me.Button1.TabIndex = 21
+        Me.Button1.Text = "Довідка"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'RegForm
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -240,6 +253,7 @@ Partial Class RegForm
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(849, 432)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.txtfal)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -290,4 +304,7 @@ Partial Class RegForm
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents txtfal As TextBox
+    Friend WithEvents FolderBrowserDialog1 As FolderBrowserDialog
+    Friend WithEvents SaveFileDialog1 As SaveFileDialog
+    Friend WithEvents Button1 As Button
 End Class
