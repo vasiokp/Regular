@@ -396,7 +396,6 @@ Public Class RegForm
         Dim rezz2() As String = podil.Split(getregexp)
         Dim lo As Integer = -1
         txtval.Clear()
-
         txt.Clear()
         For i As Integer = 0 To rezz2.Length - 1
             If rezz2(i) <> "" Then
@@ -1083,7 +1082,6 @@ Public Class RegForm
     Public Function userTextget()
         Dim t As String = userTextf()
         Dim arrayWord() As String = t.Split()
-
         Dim LastNonEmpty As Integer = -1
         For i As Integer = 0 To arrayWord.Length - 1
             If arrayWord(i) <> "" Then
@@ -1094,6 +1092,7 @@ Public Class RegForm
         ReDim Preserve arrayWord(LastNonEmpty)
         Return arrayWord
     End Function
+
 
     Private Sub btnfopen_Click(sender As Object, e As EventArgs) Handles btnfopen.Click
         CompareForm.Show()
