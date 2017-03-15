@@ -6,43 +6,37 @@ Public Class CompareForm
     Public Sub CompareForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim userarray() As String = RegForm.userTextget()
         Dim mas() As String = RegForm.arrgood(RegForm.txtgettext.Text.Split)
-        Dim k As Integer = 0
-        Dim j As Integer = 0
-        Dim score As Integer = 0
-
-        If userarray.Length < RegForm.val_number + 1 Then
+		Dim j As Integer = 0
+		Dim isAdded As Boolean = False
+		Dim score As Integer = 0
+		Dim userAray As List(Of String) = userarray.ToList
+		If userarray.Length < RegForm.val_number + 1 Then
             MsgBox("Недостатньо слів у вашому тексті")
         End If
         If userarray.Length > RegForm.val_number + 1 Then
             MsgBox("Забагато слів у вашому тексті")
         End If
 
-        For Each word As String In mas
-            For i = 0 To RegForm.val_number
-                If word = RegForm.val_words(i) Then
-                    j += 1
-                    If k < userarray.Length Then
+		For Each correctWord As String In RegForm.val_words
+			j += 1
+			For Each userWord As String In userAray
+				If (userWord = correctWord) Then
+					datacompare.Rows.Add(j, correctWord, "     =", userWord)
+					score += 1
+					isAdded = True
+					userAray.Remove(correctWord)
+					Exit For
+				Else
+					isAdded = False
+				End If
 
-                        If (word = userarray(k)) Then
-                            datacompare.Rows.Add(j, word, "     =", userarray(k))
+			Next
+			If (isAdded = False) Then datacompare.Rows.Add(j, correctWord, "     !=", "Не знайденно!")
 
-                            score += 1
-                            k += 1
-                                Exit For
-                            Else
-                                datacompare.Rows.Add(j, word, "     !=", userarray(k))
-                            k += 1
-                            Exit For
-                        End If
-                    Else
-                        datacompare.Rows.Add(j, word, "   ???", " - - -")
-                        Exit For
-                    End If
 
-                End If
-            Next
-        Next
-        For i = 0 To datacompare.Rows.Count - 2
+		Next
+
+		For i = 0 To datacompare.Rows.Count - 2
 
             With datacompare.Rows(i)
                 If .Cells("equals1").Value = "     !=" Then

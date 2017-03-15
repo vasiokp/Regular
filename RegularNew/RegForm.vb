@@ -938,10 +938,10 @@ Public Class RegForm
                 file.Close()
             End If
         Else
-            Dim txtfile As New StreamWriter(filename, False)
-            txtfile.Write(txtgettext.Text)
-            txtfile.Close()
-        End If
+			'Dim txtfile As New StreamWriter(filename, False)
+			'txtfile.Write(txtgettext.Text)
+			'txtfile.Close()
+		End If
 
     End Sub
     Public Function GetText()

@@ -6,6 +6,22 @@ RegularNew
 </name>
 </assembly>
 <members>
+<member name="T:RegularNew.My.Resources.Resources">
+<summary>
+  Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+</summary>
+</member>
+<member name="P:RegularNew.My.Resources.Resources.ResourceManager">
+<summary>
+  Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+</summary>
+</member>
+<member name="P:RegularNew.My.Resources.Resources.Culture">
+<summary>
+  Перезаписывает свойство CurrentUICulture текущего потока для всех
+  обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+</summary>
+</member>
 <member name="M:RegularNew.RegForm.zaminasmask2(System.Int32)">
  <summary>
  Заміна для деяких варіантів
@@ -40,22 +56,6 @@ RegularNew
  </summary>
  <param name="lastpos">Останній </param>
  <returns></returns>
-</member>
-<member name="T:RegularNew.My.Resources.Resources">
-<summary>
-  Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
-</summary>
-</member>
-<member name="P:RegularNew.My.Resources.Resources.ResourceManager">
-<summary>
-  Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
-</summary>
-</member>
-<member name="P:RegularNew.My.Resources.Resources.Culture">
-<summary>
-  Перезаписывает свойство CurrentUICulture текущего потока для всех
-  обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
-</summary>
 </member>
 </members>
 </doc>
